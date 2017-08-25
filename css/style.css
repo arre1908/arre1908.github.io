@@ -1,0 +1,9 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../images/scene.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+
+body {
+    color: white;
+}
