@@ -1,9 +1,43 @@
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url(../images/scene.jpg) no-repeat center fixed; 
-    background-size: cover;
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
 }
 
 body {
     color: white;
 }
+
+#bg {
+    background: url(../images/scene.jpg);
+    background-size: cover;
+    filter: blur(7px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+#frame-top {
+    margin-top: 100px;
+    padding-top: 25px;
+    width: 1000px;
+    height: 550px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #48474C;
+}
+
+#screen {
+    background: #2A2A2A;
+    border-radius: 2px;
+    width: 950px;
+    height: 500px;
+}
+
