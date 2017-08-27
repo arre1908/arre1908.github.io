@@ -6,6 +6,7 @@ html {
 * {
     padding: 0;
     margin: 0 auto;
+    color: #00FF00;
 }
 
 body {
@@ -53,7 +54,6 @@ body {
 
 #screen {
     background: #222222;
-    color: #00FF00;
     border-radius: 2px;
     width: 950px;
     height: 500px;
@@ -93,4 +93,12 @@ ul {
 
 li {
     display: inline;
+}
+
+.nav:link, .nav:visited, .nav:active {
+    text-decoration: none;
+}
+
+.nav:hover {
+    text-decoration: underline;
 }
