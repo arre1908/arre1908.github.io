@@ -101,7 +101,7 @@ html {
             position: absolute;
             width: 100%;
             height: calc(100% - 550px);
-            min-height: 300px;
+            min-height: 250px;
             top: 550px;
             left: 0;
             z-index: -2;
@@ -117,8 +117,8 @@ html {
 
     body {
         background: #222222;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
     }
 
     span {
@@ -139,6 +139,8 @@ html {
 
     li {
         display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .nav:link, .nav:visited, .nav:active {
