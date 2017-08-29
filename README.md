@@ -1,5 +1,5 @@
 # sample-website
 
-Just testing out some stuff..
+Personal website made entirely with HTML/CSS
 
 Testing VS Code source control with Git..
