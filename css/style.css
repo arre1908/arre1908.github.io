@@ -10,7 +10,6 @@ html {
         }
 
         body {
-            /* background: #FFFFFF; */
             background: #ffad42;
             min-height: 100%;
         }
@@ -88,7 +87,6 @@ html {
         }
 
         #shadow {
-            /* background: #908E8E; */
             background: #bb4d00;
             position: absolute;
             left: calc(50% - 650px);
@@ -99,7 +97,6 @@ html {
         }
 
         #table {
-            /* background: #B3B3B3; */
             background: #f57c00;
             position: absolute;
             width: 100%;
