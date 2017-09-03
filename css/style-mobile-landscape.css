@@ -14,7 +14,7 @@
 
     #frame-top {
         background: #33354A;
-        width: 840px;
+        width: 800px;
         height: 370px;
         border-radius: 50px;
         margin-top: calc(50vh - 220px);
@@ -38,7 +38,7 @@
 
     #screen {
         background: #222222;
-        width: 700px;
+        width: 660px;
         height: 350px;
     }
 
