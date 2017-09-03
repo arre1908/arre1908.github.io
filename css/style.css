@@ -124,7 +124,7 @@ html {
 
     #frame-top {
         background: #33354A;
-        margin-top: calc(50vh - 675px);
+        margin-top: calc(50vh - 700px);
         padding-top: 40px;
         width: 700px;
         height: 1300px;
@@ -154,6 +154,17 @@ html {
         border-radius: 2px;
         width: 650px;
         height: 1100px;
+    }
+
+    #shadow {
+        background: #bb4d00;
+        position: absolute;
+        left: calc(50% - 400px);
+        margin-top: -15px;
+        width: 800px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: -1;
     }
 
     span {
