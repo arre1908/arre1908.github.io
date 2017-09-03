@@ -150,7 +150,7 @@ html {
     }
 
     #screen {
-        background: black;
+        background: #222222;
         border-radius: 2px;
         width: 650px;
         height: 1100px;
