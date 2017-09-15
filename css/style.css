@@ -15,7 +15,7 @@ html {
     }
 
     #frame-top {
-        margin-top: 100px;
+        margin-top: 5%;
         padding-top: 20px;
         width: 1000px;
         height: 580px;
@@ -102,7 +102,7 @@ html {
         position: absolute;
         width: 100%;
         height: calc(100% - 550px);
-        min-height: 220px;
+        min-height: 190px;
         top: 550px;
         left: 0;
         z-index: -2;
