@@ -82,7 +82,9 @@
 
     .nav:link, .nav:visited, .nav:active, .nav:hover {
         text-decoration: none;
+        display: block;
         padding: 15px;
+        width: 40%;
         background: #313131;
     }
 

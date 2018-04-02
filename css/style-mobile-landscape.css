@@ -65,7 +65,9 @@
 
     .nav:link, .nav:visited, .nav:active, .nav:hover {
         text-decoration: none;
+        display: inline-block;
         padding: 15px;
+        width: 16%;
         background: #313131;
     }
 
