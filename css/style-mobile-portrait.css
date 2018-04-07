@@ -3,7 +3,7 @@
     * {
         margin: 0 auto;
         padding: 0;
-        color: #00FF00;
+        color: #ffffff;
     }
 
     body {
@@ -62,10 +62,10 @@
     }
 
     #name {
-        padding: 100px 0 50px 0;
+        padding: 100px 0 30px 0;
         text-align: center;
         font-weight: normal;
-        font-size: 350%;
+        font-size: 400%;
     }
 
     ul {

@@ -6,7 +6,7 @@ html {
     * {
         padding: 0;
         margin: 0 auto;
-        color: #00FF00;
+        color: #ffffff;
     }
 
     body {
@@ -59,7 +59,7 @@ html {
     }
 
     #name {
-        padding: 100px 0 50px 0;
+        padding: 100px 0 30px 0;
         text-align: center;
         font-weight: normal;
         font-size: 350%;
@@ -67,6 +67,11 @@ html {
 
     span {
         padding: 5px;
+    }
+
+    #hosttext {
+        color: #00ff00;
+        padding: 0;
     }
 
     ul {
