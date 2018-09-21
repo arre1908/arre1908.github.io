@@ -1,5 +1,5 @@
 html {
-    font-family: consolas;
+    font-family: consolas, monospace;
 }
 
 @media (min-width: 1301px) {
