@@ -1,0 +1,11 @@
+@import "./colors.scss";
+
+.device {
+  position: relative;
+  background-color: $dv-fill;
+  border: 3px solid $dv-border;
+  border-bottom: none;
+  border-radius: 8px 8px 0px 0px;
+  height: 350px;
+  width: 500px;
+}

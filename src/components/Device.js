@@ -1,5 +1,6 @@
 import React from "react";
 import Screen from "./Screen";
+import "../css/Device.scss";
 
 function Device() {
   return (

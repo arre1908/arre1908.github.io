@@ -1,0 +1,16 @@
+// Component colors
+$dv-border: #444;
+$dv-fill: #222;
+$sc-fill: #000;
+$kb-border: #bbb;
+$kb-fill: #ddd;
+
+// Theme colors
+$bg-primary: #ccc;
+$bg-secondary: tomato;
+$accent: #0a8;
+
+.text-accent {
+  color: $accent;
+  font-weight: bold;
+}

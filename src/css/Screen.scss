@@ -1,0 +1,14 @@
+@import "./colors.scss";
+
+.screen {
+  position: absolute;
+  background-color: $sc-fill;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 15px;
+  padding: 10px;
+  height: auto;
+  color: #ccc;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Keyboard.scss";
 
 function Keyboard() {
   return (

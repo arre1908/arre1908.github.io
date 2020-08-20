@@ -1,13 +1,15 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Device from "./components/Device";
 import Keyboard from "./components/Keyboard";
 
 function App() {
   return (
     <div className="app flex-center">
-      <Device />
-      <Keyboard />
+      <div className="container flex-center">
+        <Device />
+        <Keyboard />
+      </div>
     </div>
   );
 }

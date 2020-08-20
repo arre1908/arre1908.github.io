@@ -1,0 +1,30 @@
+@import "./css/colors.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  height: 100vh;
+  // border: 10px solid $bg-secondary;
+}
+
+/* Maintains aspect ratio */
+.container {
+  flex-direction: column;
+  background: tomato;
+  height: 60vh;
+  max-height: 60vw;
+  width: 90vw;
+  max-width: 90vh;
+}
