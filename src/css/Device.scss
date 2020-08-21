@@ -1,5 +1,10 @@
 @import "./variables.scss";
 
+.container {
+  flex-direction: column;
+  height: 100vh;
+}
+
 /* Maintains aspect ratio */
 .device {
   background-color: $dv-fill;
@@ -11,5 +16,30 @@
   width: 75vmin;
   max-height: 50 * $base-unit;
   max-width: 75 * $base-unit;
-  z-index: 3;
+}
+
+.screen {
+  background-color: $sc-fill;
+  color: $text-primary;
+  padding: 10px;
+  height: 100%;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  background-color: $kb-fill;
+  border: 2px solid $kb-border;
+  border-radius: 4px 4px 16px 16px;
+  height: 3vmin;
+  width: 98vmin;
+  max-height: 3 * $base-unit;
+  max-width: 98 * $base-unit;
+}
+
+.keyboard-grip {
+  background-color: $kb-border;
+  border-radius: 0px 0px 8px 8px;
+  height: 40%;
+  width: 25%;
 }

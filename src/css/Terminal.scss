@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.terminal {
+  max-height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.outputs {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.line {
+  @include code;
+  word-wrap: break-word;
+}
+
+.input-info {
+  @include code;
+  float: left;
+  padding-top: 3px;
+}
+
+.input-container {
+  display: block;
+  overflow: hidden;
+}
+
+input {
+  @include code;
+  background-color: $sc-fill;
+  border: none;
+  outline: none;
+  color: $text-primary;
+  width: 100%;
+}
+
+.text-accent {
+  color: $text-accent;
+  font-weight: bold;
+}

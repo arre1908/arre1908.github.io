@@ -1,11 +1,18 @@
 import React from "react";
-import Screen from "./Screen";
+import Terminal from "./Terminal";
 import "../css/Device.scss";
 
 function Device() {
   return (
-    <div className="device">
-      <Screen />
+    <div className="container flex-center">
+      <div className="device">
+        <div className="screen">
+          <Terminal />
+        </div>
+      </div>
+      <div className="keyboard">
+        <div className="keyboard-grip"></div>
+      </div>
     </div>
   );
 }

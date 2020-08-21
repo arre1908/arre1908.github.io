@@ -2,14 +2,20 @@
 $base-unit: 12px;
 
 // Component colors
-$dv-fill: #222;
+$dv-fill: #222222;
 $dv-border: lighten($dv-fill, 25%);
-$sc-fill: #000;
-$kb-fill: #aaa;
-$kb-border: darken($kb-fill, 20%);
+$sc-fill: #000000;
+$kb-fill: #cccccc;
+$kb-border: darken($kb-fill, 30%);
 
 // Theme colors
-$bg-primary: #1b2a46;
-$bg-secondary: darken($bg-primary, 10%);
-$text-primary: #ccc;
-$text-accent: #0a8;
+$bg-primary: #2e333a;
+$bg-secondary: #eea880;
+$text-primary: #cccccc;
+$text-accent: #00aa88;
+
+@mixin code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 1em;
+}
