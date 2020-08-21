@@ -1,0 +1,15 @@
+// Base unit for setting max dimensions
+$base-unit: 12px;
+
+// Component colors
+$dv-fill: #222;
+$dv-border: lighten($dv-fill, 25%);
+$sc-fill: #000;
+$kb-fill: #aaa;
+$kb-border: darken($kb-fill, 20%);
+
+// Theme colors
+$bg-primary: #1b2a46;
+$bg-secondary: darken($bg-primary, 10%);
+$text-primary: #ccc;
+$text-accent: #0a8;

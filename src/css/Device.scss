@@ -1,11 +1,15 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
+/* Maintains aspect ratio */
 .device {
-  position: relative;
   background-color: $dv-fill;
+  padding: 15px;
   border: 3px solid $dv-border;
   border-bottom: none;
   border-radius: 8px 8px 0px 0px;
-  height: 350px;
-  width: 500px;
+  height: 50vmin;
+  width: 75vmin;
+  max-height: 50 * $base-unit;
+  max-width: 75 * $base-unit;
+  z-index: 3;
 }

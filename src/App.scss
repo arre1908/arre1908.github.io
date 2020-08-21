@@ -1,11 +1,11 @@
-@import "./css/colors.scss";
+@import "./css/variables.scss";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ccc;
+  background-color: $bg-primary;
 }
 
 .flex-center {
@@ -15,16 +15,6 @@ body {
 }
 
 .app {
-  height: 100vh;
-  // border: 10px solid $bg-secondary;
-}
-
-/* Maintains aspect ratio */
-.container {
   flex-direction: column;
-  background: tomato;
-  height: 60vh;
-  max-height: 60vw;
-  width: 90vw;
-  max-width: 90vh;
+  height: 100vh;
 }

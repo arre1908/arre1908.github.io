@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.bg {
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+}
+
+/* Maintains aspect ratio */
+.circle {
+  background-color: $bg-secondary;
+  height: 90vmin;
+  width: 90vmin;
+  max-height: 90 * $base-unit;
+  max-width: 90 * $base-unit;
+  border-radius: 50%;
+}
