@@ -12,7 +12,9 @@ $kb-border: darken($kb-fill, 30%);
 $bg-primary: #2e333a;
 $bg-secondary: #eea880;
 $text-primary: #cccccc;
-$text-accent: #00aa88;
+$text-secondary: $bg-secondary;
+$link: #0088ff;
+$text-accent: #00bb88;
 
 @mixin code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.me {
+  text-align: center;
+  border: 5px dotted white;
+  padding: 10% 0%;
+  margin-bottom: 8px;
+}
+
+.me > h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+a,
+a:visited {
+  color: $link;
+}
