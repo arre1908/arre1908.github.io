@@ -8,12 +8,10 @@ body {
   background-color: $bg-primary;
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.app {
-  position: relative;
+@media (min-width: $desktop-width) and (min-height: $desktop-height) {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

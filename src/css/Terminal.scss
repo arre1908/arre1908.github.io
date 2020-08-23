@@ -2,20 +2,16 @@
 
 .terminal {
   @include code;
-  max-height: 100%;
-  overflow: auto;
-  overflow-x: hidden;
+  color: $text-primary;
+  word-wrap: break-word;
 }
 
 .line {
-  word-wrap: break-word;
   margin-bottom: 8px;
-  padding-top: 2px;
 }
 
 .input-info {
   float: left;
-  padding-top: 2px;
 }
 
 .input-container {
@@ -25,12 +21,12 @@
 
 input {
   @include code;
-  background-color: $sc-fill;
+  background-color: transparent;
   border: none;
   outline: none;
   padding: 0;
   width: 100%;
-  color: $text-primary;
+  color: $text-secondary;
 }
 
 .text-accent {
@@ -40,4 +36,24 @@ input {
 
 .text-secondary {
   color: $text-secondary;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+@media (min-width: $desktop-width) and (min-height: $desktop-height) {
+  .terminal {
+    max-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .mobile-hidden {
+    display: initial;
+  }
+
+  .mobile-only {
+    display: none;
+  }
 }

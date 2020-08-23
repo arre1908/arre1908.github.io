@@ -47,20 +47,21 @@ class Terminal extends Component {
           Hello, welcome to my website! This terminal app was built in React.
         </div>
         <div className="line">
-          Type 'help' and press Enter to get a list of commands.
+          Type <span className="text-secondary">help</span> and press Enter to
+          get a list of commands.
         </div>
 
         {outputs}
 
         <div>
-          <div className="input-info">
-            <span className="text-accent">me@luisarredondo.com</span>
-            :~$&nbsp;
+          <div className="input-info text-accent">
+            <span className="mobile-hidden">me@luisarredondo.com:</span>
+            ~$&nbsp;
           </div>
           <div className="input-container">
             <form onSubmit={this.handleSubmit}>
               <input
-                ref={(input) => (this.input = input)}
+                ref={(elem) => (this.input = elem)}
                 type="text"
                 value={this.state.input}
                 onChange={this.handleChange}

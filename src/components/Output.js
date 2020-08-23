@@ -20,6 +20,8 @@ function createOutput(line) {
           <span className="text-secondary">email</span> - Show email address.
           <br />
           <span className="text-secondary">clear</span> - Clear the console
+          <br />
+          <span className="text-secondary">help</span> - Show list of commands.
           output.
         </div>
       );
@@ -87,7 +89,11 @@ function createOutput(line) {
     case "":
       return "";
     default:
-      return <div>Unknown command: '{line}'</div>;
+      return (
+        <div className="line">
+          Unknown command: <span className="text-secondary">{line}</span>
+        </div>
+      );
   }
 }
 
@@ -95,9 +101,11 @@ function Output(props) {
   return (
     <div>
       <div className="line">
-        <span className="text-accent">me@luisarredondo.com</span>
-        {":~$ "}
-        {props.line}
+        <span className="text-accent">
+          <span className="mobile-hidden">me@luisarredondo.com:</span>
+          ~$&nbsp;
+        </span>
+        <span className="text-secondary">{props.line}</span>
       </div>
       {createOutput(props.line)}
     </div>
