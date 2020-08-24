@@ -9,6 +9,10 @@ body {
 }
 
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
+  body {
+    overflow: hidden;
+  }
+
   .flex-center {
     display: flex;
     align-items: center;

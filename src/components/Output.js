@@ -15,14 +15,14 @@ function createOutput(line) {
           LinkedIn profile.
           <br />
           <span className="text-secondary">github</span> - Show link to Github
-          profile.
+          repo.
           <br />
           <span className="text-secondary">email</span> - Show email address.
           <br />
           <span className="text-secondary">clear</span> - Clear the console
+          output.
           <br />
           <span className="text-secondary">help</span> - Show list of commands.
-          output.
         </div>
       );
     case "resume":

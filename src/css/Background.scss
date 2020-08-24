@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+.title {
+  display: none;
+}
+
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   .bg {
     position: absolute;
@@ -7,13 +11,28 @@
     z-index: -1;
   }
 
+  .title {
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    color: $text-primary;
+    font-size: 4vmin;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    animation: fadein-title $animation-duration;
+  }
+
   /* Maintains aspect ratio */
   .circle {
+    position: relative;
     background-color: $bg-secondary;
     height: 90vmin;
     width: 90vmin;
-    max-height: 90 * $base-unit;
-    max-width: 90 * $base-unit;
     border-radius: 50%;
+    animation: fadein-circle $animation-duration;
   }
+
+  @include fadein-keyframe(fadein-title, -100px, 0px);
+  @include fadein-keyframe(fadein-circle, 100px, 0px);
 }
