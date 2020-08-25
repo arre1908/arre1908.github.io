@@ -5,7 +5,7 @@ import Background from "./components/Background";
 
 function App() {
   return (
-    <div className="app flex-center">
+    <div className="app">
       <Device />
       <Background />
     </div>

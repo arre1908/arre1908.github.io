@@ -13,10 +13,11 @@ $kb-border: darken($kb-fill, 30%);
 
 // Theme colors
 $bg-primary: #2e333a;
-$bg-secondary: #eea880;
+$bg-secondary: #ee9f80;
 $text-primary: #cccccc;
 $text-secondary: #ffc19e;
 $text-accent: #d37e4e;
+$text-title: #ffffff;
 $link: #4fadff;
 
 @mixin code {
@@ -25,15 +26,21 @@ $link: #4fadff;
   font-size: 1em;
 }
 
-@mixin fadein-keyframe($name, $from, $to) {
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fadein-keyframe($name, $yFrom, $yTo, $xFrom: 0px, $xTo: 0px) {
   @keyframes #{$name} {
     from {
       opacity: 0;
-      transform: translateY(#{$from});
+      transform: translateY($yFrom) translateX($xFrom);
     }
     to {
       opacity: 1;
-      transform: translateY(#{$to});
+      transform: translateY($yTo) translateX($xTo);
     }
   }
 }

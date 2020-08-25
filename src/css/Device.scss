@@ -8,14 +8,15 @@
   padding: 10px;
 }
 
+/* Desktop styles */
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   .container {
+    @include flex-center;
     flex-direction: column;
     height: 100vh;
     animation: fadein-device $animation-duration;
   }
 
-  /* Maintains aspect ratio */
   .device {
     background-color: $dv-fill;
     padding: 15px;
@@ -48,5 +49,5 @@
     width: 25%;
   }
 
-  @include fadein-keyframe(fadein-device, -100px, 0px);
+  @include fadein-keyframe(fadein-device, -10vmin, 0px);
 }

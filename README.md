@@ -1,6 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# luisarredondo.com
+
+This is my personal website hosted through Github Pages with a custom domain.
+
+Link: [luisarredondo.com](https://luisarredondo.com/)
+
+## Branches
+
+`master`: Bundled files for Github Pages
+
+`dev`: React source
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 

@@ -4,7 +4,7 @@ import "../css/Device.scss";
 
 function Device() {
   return (
-    <div className="container flex-center">
+    <div className="container">
       <div className="device">
         <div className="screen">
           <Terminal />

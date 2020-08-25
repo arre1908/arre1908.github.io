@@ -8,14 +8,13 @@ body {
   background-color: $bg-primary;
 }
 
+/* Desktop styles */
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   body {
     overflow: hidden;
   }
 
-  .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .app {
+    @include flex-center;
   }
 }

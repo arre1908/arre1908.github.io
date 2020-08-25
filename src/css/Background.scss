@@ -4,28 +4,27 @@
   display: none;
 }
 
+/* Desktop styles */
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   .bg {
     position: absolute;
-    height: 100vh;
+    padding: 5vmin;
     z-index: -1;
   }
 
   .title {
     display: block;
-    margin: 0;
     position: absolute;
+    margin: 0;
     z-index: 1;
-    color: $text-primary;
+    color: $text-title;
     font-size: 4vmin;
     font-weight: normal;
     letter-spacing: 0.1em;
     animation: fadein-title $animation-duration;
   }
 
-  /* Maintains aspect ratio */
-  .circle {
-    position: relative;
+  .shape {
     background-color: $bg-secondary;
     height: 90vmin;
     width: 90vmin;
@@ -33,6 +32,6 @@
     animation: fadein-circle $animation-duration;
   }
 
-  @include fadein-keyframe(fadein-title, -100px, 0px);
-  @include fadein-keyframe(fadein-circle, 100px, 0px);
+  @include fadein-keyframe(fadein-title, 0px, 0px, -10vmin, 0px);
+  @include fadein-keyframe(fadein-circle, 10vmin, 0px);
 }

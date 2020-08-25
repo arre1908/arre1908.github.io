@@ -42,11 +42,11 @@ input {
   display: none;
 }
 
+/* Desktop styles */
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   .terminal {
     max-height: 100%;
     overflow: auto;
-    overflow-x: hidden;
   }
 
   .mobile-hidden {
