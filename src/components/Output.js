@@ -3,26 +3,35 @@ import { links } from "../config";
 import "../css/Output.scss";
 
 function createOutput(line) {
-  switch (line.toLowerCase()) {
+  switch (line.trim().toLowerCase()) {
     case "help":
       return (
-        <div className="line">
-          <span className="text-secondary">me</span> - Show all info.
-          <br />
-          <span className="text-secondary">resume</span> - Show link to resume.
-          <br />
-          <span className="text-secondary">linkedin</span> - Show link to
-          LinkedIn profile.
-          <br />
-          <span className="text-secondary">github</span> - Show link to Github
-          repo.
-          <br />
-          <span className="text-secondary">email</span> - Show email address.
-          <br />
-          <span className="text-secondary">clear</span> - Clear the console
-          output.
-          <br />
-          <span className="text-secondary">help</span> - Show list of commands.
+        <div>
+          <div className="line">
+            <span className="text-secondary">me</span> - Show all info.
+            <br />
+            <span className="text-secondary">swapi</span> - Show link to Star
+            Wars API web application.
+          </div>
+          <div className="line">
+            <span className="text-secondary">resume</span> - Show link to
+            resume.
+            <br />
+            <span className="text-secondary">linkedin</span> - Show link to
+            LinkedIn profile.
+            <br />
+            <span className="text-secondary">github</span> - Show link to Github
+            repo.
+            <br />
+            <span className="text-secondary">email</span> - Show email address.
+          </div>
+          <div className="line">
+            <span className="text-secondary">clear</span> - Clear the console
+            output.
+            <br />
+            <span className="text-secondary">help</span> - Show list of
+            commands.
+          </div>
         </div>
       );
     case "resume":
@@ -63,7 +72,7 @@ function createOutput(line) {
       );
     case "me":
       return (
-        <div className="me">
+        <div className="line me">
           <h1>Luis Arredondo</h1>
           <a href={links.resume} target="_blank" rel="noopener noreferrer">
             Resume
@@ -83,6 +92,14 @@ function createOutput(line) {
             rel="noopener noreferrer"
           >
             Email
+          </a>
+        </div>
+      );
+    case "swapi":
+      return (
+        <div className="line">
+          <a href={links.swapi} target="_blank" rel="noopener noreferrer">
+            Vue SWAPI
           </a>
         </div>
       );

@@ -4,6 +4,7 @@ const links = {
   linkedin: "https://linkedin.com/in/luis-arredondo-262067115/",
   github: "https://github.com/arre1908/arre1908.github.io/",
   email: "arredoluis@gmail.com",
+  swapi: "https://luisarredondo.com/vue-swapi",
 };
 
 export { links };
