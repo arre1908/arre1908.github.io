@@ -7,4 +7,17 @@ const links = {
   swapi: "https://luisarredondo.com/vue-swapi",
 };
 
-export { links };
+const descriptions = {
+  help: "Show list of commands",
+  me: "Show all contact info",
+  swapi: "Show link to Star Wars API web application",
+  resume: "Show link to resume",
+  linkedin: "Show link to LinkedIn profile",
+  github: "Show link to Github profile",
+  email: "Show email address",
+  clear: "Clear the console output",
+};
+
+const commands = Object.keys(descriptions);
+
+export { links, descriptions, commands };

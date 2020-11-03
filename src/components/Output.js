@@ -1,36 +1,38 @@
 import React from "react";
-import { links } from "../config";
+import { links, descriptions } from "../config";
 import "../css/Output.scss";
 
 function createOutput(line) {
-  switch (line.trim().toLowerCase()) {
+  switch (line) {
     case "help":
       return (
         <div>
           <div className="line">
-            <span className="text-secondary">me</span> - Show all info.
+            <span className="text-secondary">me</span>
+            {` - ${descriptions.me}`}
             <br />
-            <span className="text-secondary">swapi</span> - Show link to Star
-            Wars API web application.
+            <span className="text-secondary">swapi</span>
+            {` - ${descriptions.swapi}`}
           </div>
           <div className="line">
-            <span className="text-secondary">resume</span> - Show link to
-            resume.
+            <span className="text-secondary">resume</span>
+            {` - ${descriptions.resume}`}
             <br />
-            <span className="text-secondary">linkedin</span> - Show link to
-            LinkedIn profile.
+            <span className="text-secondary">linkedin</span>
+            {` - ${descriptions.linkedin}`}
             <br />
-            <span className="text-secondary">github</span> - Show link to Github
-            repo.
+            <span className="text-secondary">github</span>
+            {` - ${descriptions.github}`}
             <br />
-            <span className="text-secondary">email</span> - Show email address.
+            <span className="text-secondary">email</span>
+            {` - ${descriptions.email}`}
           </div>
           <div className="line">
-            <span className="text-secondary">clear</span> - Clear the console
-            output.
+            <span className="text-secondary">clear</span>
+            {` - ${descriptions.clear}`}
             <br />
-            <span className="text-secondary">help</span> - Show list of
-            commands.
+            <span className="text-secondary">help</span>
+            {` - ${descriptions.help}`}
           </div>
         </div>
       );
@@ -91,7 +93,7 @@ function createOutput(line) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Email
+            {links.email}
           </a>
         </div>
       );

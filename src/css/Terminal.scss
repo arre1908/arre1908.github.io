@@ -4,6 +4,7 @@
   @include code;
   color: $text-primary;
   word-wrap: break-word;
+  min-height: 100%;
 }
 
 .line {
@@ -27,6 +28,30 @@ input {
   padding: 0;
   width: 100%;
   color: $text-secondary;
+}
+
+.suggestions {
+  min-height: 1em;
+  padding: 0;
+
+  .suggestion {
+    @include code;
+    padding: 0;
+    margin-right: 16px;
+    background: none;
+    border: none;
+    color: $text-secondary;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+  }
 }
 
 .text-accent {
