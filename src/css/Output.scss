@@ -2,7 +2,8 @@
 
 .me {
   text-align: center;
-  border: 5px dotted $text-primary;
+  border-top: 5px dotted $text-primary;
+  border-bottom: 5px dotted $text-primary;
   padding: 10% 10px;
   line-height: 1.5;
 }

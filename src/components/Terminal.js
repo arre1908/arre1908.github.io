@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Output from "./Output";
+import Suggestion from "./Suggestion";
 import "../css/Terminal.scss";
 import { commands } from "../config";
 
@@ -69,14 +70,14 @@ class Terminal extends Component {
 
   render() {
     const outputs = this.state.lines.map((line, index) => {
-      return <Output key={index} line={line} />;
+      return (
+        <Output key={index} line={line} handleSubmit={this.handleSubmit} />
+      );
     });
 
     const suggestions = this.state.suggestions.map((command, index) => {
       return (
-        <button key={index} className="suggestion" onClick={this.handleSubmit}>
-          {command}
-        </button>
+        <Suggestion key={index} text={command} onClick={this.handleSubmit} />
       );
     });
 
@@ -85,9 +86,9 @@ class Terminal extends Component {
         <div className="line">
           Hello, welcome to my website! This terminal app was built in React.
         </div>
-        <div className="line">
-          Type <span className="text-secondary">help</span> and press Enter to
-          get a list of commands.
+        <div className="line help">
+          Type (or click) <Suggestion text="help" onClick={this.handleSubmit} />{" "}
+          and press Enter to get a list of commands.
         </div>
 
         {outputs}

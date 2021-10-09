@@ -1,38 +1,38 @@
 import React from "react";
+import Suggestion from "./Suggestion";
 import { links, descriptions } from "../config";
 import "../css/Output.scss";
 
-function createOutput(line) {
+function createOutput(line, handleSubmit) {
   switch (line) {
     case "help":
       return (
         <div>
           <div className="line">
-            <span className="text-secondary">me</span>
-            {` - ${descriptions.me}`}
+            <Suggestion text="me" onClick={handleSubmit} /> - {descriptions.me}
             <br />
-            <span className="text-secondary">swapi</span>
-            {` - ${descriptions.swapi}`}
+            <Suggestion text="swapi" onClick={handleSubmit} /> -
+            {descriptions.swapi}
           </div>
           <div className="line">
-            <span className="text-secondary">resume</span>
-            {` - ${descriptions.resume}`}
+            <Suggestion text="resume" onClick={handleSubmit} /> -
+            {descriptions.resume}
             <br />
-            <span className="text-secondary">linkedin</span>
-            {` - ${descriptions.linkedin}`}
+            <Suggestion text="linkedin" onClick={handleSubmit} /> -
+            {descriptions.linkedin}
             <br />
-            <span className="text-secondary">github</span>
-            {` - ${descriptions.github}`}
+            <Suggestion text="github" onClick={handleSubmit} /> -
+            {descriptions.github}
             <br />
-            <span className="text-secondary">email</span>
-            {` - ${descriptions.email}`}
+            <Suggestion text="email" onClick={handleSubmit} /> -
+            {descriptions.email}
           </div>
           <div className="line">
-            <span className="text-secondary">clear</span>
-            {` - ${descriptions.clear}`}
+            <Suggestion text="clear" onClick={handleSubmit} /> -
+            {descriptions.clear}
             <br />
-            <span className="text-secondary">help</span>
-            {` - ${descriptions.help}`}
+            <Suggestion text="help" onClick={handleSubmit} /> -
+            {descriptions.help}
           </div>
         </div>
       );
@@ -40,8 +40,9 @@ function createOutput(line) {
       return (
         <div className="line">
           <a href={links.resume} target="_blank" rel="noopener noreferrer">
-            Google Drive
-          </a>
+            Resume
+          </a>{" "}
+          (link)
         </div>
       );
     case "linkedin":
@@ -49,7 +50,8 @@ function createOutput(line) {
         <div className="line">
           <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </a>
+          </a>{" "}
+          (link)
         </div>
       );
     case "github":
@@ -57,7 +59,8 @@ function createOutput(line) {
         <div className="line">
           <a href={links.github} target="_blank" rel="noopener noreferrer">
             Github
-          </a>
+          </a>{" "}
+          (link)
         </div>
       );
     case "email":
@@ -69,7 +72,8 @@ function createOutput(line) {
             rel="noopener noreferrer"
           >
             {links.email}
-          </a>
+          </a>{" "}
+          (link)
         </div>
       );
     case "me":
@@ -102,7 +106,8 @@ function createOutput(line) {
         <div className="line">
           <a href={links.swapi} target="_blank" rel="noopener noreferrer">
             Vue SWAPI
-          </a>
+          </a>{" "}
+          (link)
         </div>
       );
     case "":
@@ -116,7 +121,7 @@ function createOutput(line) {
   }
 }
 
-function Output(props) {
+function Output({ line, handleSubmit }) {
   return (
     <div>
       <div className="line">
@@ -124,9 +129,9 @@ function Output(props) {
           <span className="mobile-hidden">me@luisarredondo.com:</span>
           ~$&nbsp;
         </span>
-        <span className="text-secondary">{props.line}</span>
+        <span className="text-secondary">{line}</span>
       </div>
-      {createOutput(props.line)}
+      {createOutput(line, handleSubmit)}
     </div>
   );
 }

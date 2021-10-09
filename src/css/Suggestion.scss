@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.suggestion {
+  @include code;
+  padding: 0;
+  background: none;
+  border: none;
+  color: $text-secondary;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+}

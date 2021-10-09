@@ -9,6 +9,10 @@
 
 .line {
   margin-bottom: 15px;
+
+  &.help > .suggestion {
+    margin: 0 !important;
+  }
 }
 
 .input-info {
@@ -34,23 +38,8 @@ input {
   min-height: 1em;
   padding: 0;
 
-  .suggestion {
-    @include code;
-    padding: 0;
+  > .suggestion {
     margin-right: 16px;
-    background: none;
-    border: none;
-    color: $text-secondary;
-
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    &:focus {
-      text-decoration: underline;
-      outline: none;
-    }
   }
 }
 
