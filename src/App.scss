@@ -11,6 +11,7 @@ body {
 /* Desktop styles */
 @media (min-width: $desktop-width) and (min-height: $desktop-height) {
   body {
+    background-image: url("./img/bg.jpg");
     overflow: hidden;
   }
 

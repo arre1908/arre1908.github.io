@@ -13,11 +13,11 @@ $kb-border: darken($kb-fill, 30%);
 
 // Theme colors
 $bg-primary: #2e333a;
-$bg-secondary: #ee9f80;
+$bg-secondary: rgba(0,10,50,0.5);
 $text-primary: #cccccc;
 $text-secondary: #ffc19e;
 $text-accent: #d37e4e;
-$text-title: #ffffff;
+$text-title: #000000;
 $link: #4fadff;
 
 @mixin code {
